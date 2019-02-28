@@ -1,5 +1,5 @@
 dk/webtrade/todelete/entity/Address.class
-dk/webtrade/todelete/entity/Address_.class
-dk/webtrade/todelete/data/DataFacade.class
 dk/webtrade/todelete/entity/Customer.class
 dk/webtrade/todelete/entity/Customer_.class
+dk/webtrade/todelete/entity/Address_.class
+dk/webtrade/todelete/data/DataFacade.class

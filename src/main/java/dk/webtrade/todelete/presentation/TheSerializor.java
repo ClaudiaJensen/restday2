@@ -5,6 +5,7 @@
  */
 package dk.webtrade.todelete.presentation;
 
+import DTO.CustomerDTO;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import dk.webtrade.todelete.data.DataFacade;
@@ -16,9 +17,10 @@ import dk.webtrade.todelete.data.DataFacade;
 public class TheSerializor {
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private static final DataFacade DF = new DataFacade();
+    private static final CustomerDTO dto = new CustomerDTO();
     
     public static void main(String[] args) {
-         DF.populate();
+        DF.populate();
         DF.getAllAddresses().forEach((el)->System.out.println(el));
-        System.out.println(gson.toJson(DF.getAllAddresses()));  //Bad call
+        System.out.println(gson.toJson(DF.getAllCustomersDTO()));  //Bad call
     }}

@@ -5,6 +5,7 @@
  */
 package dk.webtrade.todelete.data;
 
+import DTO.CustomerDTO;
 import dk.webtrade.todelete.entity.Address;
 import dk.webtrade.todelete.entity.Customer;
 import java.util.List;
@@ -33,6 +34,12 @@ public class DataFacade {
     }
     
     public List<Customer> getAllCustomers(){
+        EntityManager em = getManager();
+        return em.createQuery("SELECT c FROM Customer c").getResultList();
+    }
+    
+    public List<CustomerDTO> getAllCustomersDTO()
+    {
         EntityManager em = getManager();
         return em.createQuery("SELECT c FROM Customer c").getResultList();
     }
