@@ -17,7 +17,6 @@ import dk.webtrade.todelete.data.DataFacade;
 public class TheSerializor {
     private static final Gson gson = new GsonBuilder().setPrettyPrinting().create();
     private static final DataFacade DF = new DataFacade();
-    private static final CustomerDTO dto = new CustomerDTO();
     
     public static void main(String[] args) {
         DF.populate();

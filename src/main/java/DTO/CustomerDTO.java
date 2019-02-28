@@ -20,12 +20,17 @@ public class CustomerDTO
     private int age;
     private String address;
 
-    public CustomerDTO(String firstName, String lastName, int age, String address)
+    public CustomerDTO()
+    {
+        
+    }
+    
+    public CustomerDTO(String firstName, String lastName, int age, Address address)
     {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
-        this.address = address;
+        this.address = address.toString();
     }
 
     public CustomerDTO(Customer customer)
@@ -33,12 +38,7 @@ public class CustomerDTO
         this.firstName = customer.getFirstname();
         this.lastName = customer.getLastname();
         this.age = customer.getAge();
-        this.address = customer.getAddress().getStreet();
-    }
-
-    public CustomerDTO()
-    {
-        
+        this.address = customer.getAddress().toString();
     }
 
     public int getId()
