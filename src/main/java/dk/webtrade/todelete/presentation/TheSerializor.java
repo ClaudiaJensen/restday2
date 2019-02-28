@@ -5,7 +5,6 @@
  */
 package dk.webtrade.todelete.presentation;
 
-import DTO.CustomerDTO;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import dk.webtrade.todelete.data.DataFacade;

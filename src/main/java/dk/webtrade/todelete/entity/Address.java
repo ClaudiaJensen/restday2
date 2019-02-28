@@ -74,25 +74,6 @@ public class Address implements Serializable {
         this.zip = zip;
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     public int getId() {
         return id;
     }
@@ -123,7 +104,7 @@ public class Address implements Serializable {
 
     @Override
     public String toString() {
-        return "dk.webtrade.todelete.entity.Address[ id=" + id + " ]";
+        return "Addressen er " + street + " " + no + ", " + zip;
     }
     
 }
